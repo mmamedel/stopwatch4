@@ -8,7 +8,7 @@ const repo = pkg.repository.url.replace(
 publish()
 
 async function publish() {
-  await ghpages.publish(
+  ghpages.publish(
     'public',
     {
       repo,

@@ -7,14 +7,13 @@
     "dev": "rollup -c -w",
     "start": "sirv public --no-clear",
     "validate": "svelte-check",
-    "deploy": "ts-node scripts/deploy.ts"
+    "deploy": "node scripts/deploy.js"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
     "@rollup/plugin-node-resolve": "^11.0.0",
     "@rollup/plugin-typescript": "^8.0.0",
     "@tsconfig/svelte": "^1.0.0",
-    "@types/node": "^14.14.39",
     "gh-pages": "^3.1.0",
     "rollup": "^2.3.4",
     "rollup-plugin-css-only": "^3.1.0",
@@ -26,7 +25,6 @@
     "svelte": "^3.0.0",
     "svelte-check": "^1.0.0",
     "svelte-preprocess": "^4.7.0",
-    "ts-node": "^9.1.1",
     "tslib": "^2.0.0",
     "typescript": "^4.0.0"
   },

@@ -3,7 +3,7 @@
   "compilerOptions": {
     "allowJs": true,
     "resolveJsonModule": true,
-    "types": ["node"]
+    "checkJs": true
   },
 
   "include": ["src/**/*"],
