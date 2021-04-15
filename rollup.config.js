@@ -34,7 +34,6 @@ function serve() {
   }
 }
 
-/** @type {import('rollup').RollupOptions} */
 const rollUpOptions = {
   input: 'src/main.ts',
   output: {

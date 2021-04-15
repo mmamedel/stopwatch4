@@ -1,5 +1,3 @@
-import { rollup, OutputOptions } from 'rollup'
-import rollUpOptions from '../rollup.config.js'
 import ghpages from 'gh-pages'
 import pkg from '../package.json'
 
@@ -7,14 +5,9 @@ const repo = pkg.repository.url.replace(
   /(https:\/\/)/,
   `$1${process.env.GH_TOKEN}@`
 )
-deploy()
+publish()
 
-async function deploy() {
-  const bundle = await rollup(rollUpOptions)
-  await bundle.generate({})
-  await bundle.write(rollUpOptions.output as OutputOptions)
-  await bundle.close()
-
+async function publish() {
   ghpages.publish(
     'public',
     {
