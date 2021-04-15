@@ -3,7 +3,7 @@
 	import { timeToTimecode } from '../helpers/time'
 
 	$: timeLabel = timeToTimecode($time)
-	let interval: number
+	let interval: NodeJS.Timeout
 
 	isPaused.subscribe(i => {
 		if (!i) {

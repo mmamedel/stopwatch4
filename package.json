@@ -6,26 +6,32 @@
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "start": "sirv public --no-clear",
-    "validate": "svelte-check"
+    "validate": "svelte-check",
+    "deploy": "ts-node scripts/deploy.ts"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
     "@rollup/plugin-node-resolve": "^11.0.0",
     "@rollup/plugin-typescript": "^8.0.0",
     "@tsconfig/svelte": "^1.0.0",
+    "gh-pages": "^3.1.0",
     "rollup": "^2.3.4",
     "rollup-plugin-css-only": "^3.1.0",
     "rollup-plugin-livereload": "^2.0.0",
     "rollup-plugin-svelte": "^7.0.0",
     "rollup-plugin-terser": "^7.0.0",
     "sass": "^1.32.8",
+    "sirv-cli": "^1.0.0",
     "svelte": "^3.0.0",
     "svelte-check": "^1.0.0",
     "svelte-preprocess": "^4.7.0",
+    "ts-node": "^9.1.1",
     "tslib": "^2.0.0",
     "typescript": "^4.0.0"
   },
-  "dependencies": {
-    "sirv-cli": "^1.0.0"
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mmamedel/stopwatch4.git"
   }
 }
