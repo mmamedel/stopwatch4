@@ -1,5 +1,5 @@
-import ghpages from 'gh-pages'
-import pkg from '../package.json'
+const ghpages = require('gh-pages')
+const pkg = require('../package.json')
 
 const repo = pkg.repository.url.replace(
   /(https:\/\/)/,
