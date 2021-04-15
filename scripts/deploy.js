@@ -22,5 +22,3 @@ async function publish() {
     }
   )
 }
-
-export {}
